@@ -1,70 +1,34 @@
-# Getting Started with Create React App
+`pics-app overview`
+1. User input and search term.
+2. API request to fetch data based on user term.
+3. show fetch data on screen.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+`How App Works`
+1. Component renders itself one time with no list of images
+2. `onSearchSubmit()` method called
+3. Request made to `Unsplash`
+4. ..wait..
+5. Request complete
+6. Set image data on state of App component
+7. App component rerenders and show images
 
-## Available Scripts
+ 
+`EVENT HANDLERS`
+`onClick`  invokes a callback function passed to it when a user click on a button or an element.
+`onChange` invokes a callback function passed to it when a user inputs data in text field.
+`onSubmit` invokes a callback function passed to it when a user submits the form.
 
-In the project directory, you can run:
+<input type="text" onChange={onInputChange}/>
+`onInputChange` is a callback function passed on to `onChange` event handler.
+Whenever the user enter text inside the text field, `onInputChange` function is invoked.
+Do not add parenthesis () on the onInputChange function when called in a `form`.
 
-### `npm start`
+`event.target.value` grabs the text user enters.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+`Alternative Event Handler Syntax`
+onChange ={e => console.log(e.target.value)}
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+`How pics-app works`
+1. user types in input
+2. callback get invoked ~ onChange{e => this.setState({ term: e.target.value})}
+3. `setState` is called with new value
