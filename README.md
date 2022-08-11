@@ -32,3 +32,9 @@ onChange ={e => console.log(e.target.value)}
 1. user types in input
 2. callback get invoked ~ onChange{e => this.setState({ term: e.target.value})}
 3. `setState` is called with new value
+
+
+In React, make sure to include a "key" on every element to be rendered as list.
+
+React `ref` is used to reach into the DOM and interact with some individual element.
+`ref` is created in the constructor, assigned to instance of variable and then pass to a particular JSX element as props.
