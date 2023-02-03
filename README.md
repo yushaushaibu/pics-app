@@ -6,7 +6,8 @@ Makes an API request to the Unsplashed server and receives a collection of image
 3. How to show lists of records
 
 `1. How to get user inputs`
-`Event handlers` determines response to user inputs and actions like clicking, typing, keypress etc. 
+`Event handlers` determines response to user inputs and actions like clicking, typing, keypress etc.
+
 - `onClick()` when user clicks on something, a callback function passed to it will be triggered.
 - `onChange()` triggers a cb function anytime user input data into the text field.
 - `onSubmit()` a callback function passed to it is invoked when form is submitted.
@@ -14,8 +15,10 @@ Makes an API request to the Unsplashed server and receives a collection of image
 Event handlers can be passed as props along with a callback function on a component or element.
 
 `Controlled and Uncontrolled elements`
+
 - `controlled form element` is the method of updating the text field's state using setState() instead of direct user input.
-`how to set controlled element in input type`
+  `how to set controlled element in input type`
+
 1. state = { term: "" }
 2. <input type="text" value={this.state.term} onChange={(e) => this.setState({ term: e.target.value})}>
 
@@ -26,3 +29,8 @@ The props system only allows information to be passed from parent to child.
 To initiate an API request, the `SearchBar component` passed up the user's search term to the `App component`.
 
 `2. Making Network (HTTP) Request`
+
+- axios
+- async await
+
+`3. How to show lists of records`
