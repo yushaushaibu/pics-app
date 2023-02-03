@@ -5,7 +5,7 @@ Makes an API request to the Unsplashed server and receives a collection of image
 2. Making http (network) requests
 3. How to show lists of records
 
-`How to get user inputs`
+`1. How to get user inputs`
 `Event handlers` determines response to user inputs and actions like clicking, typing, keypress etc. 
 - `onClick()` when user clicks on something, a callback function passed to it will be triggered.
 - `onChange()` triggers a cb function anytime user input data into the text field.
@@ -24,3 +24,5 @@ The main difference between `controlled` and `uncontrolled elements` is that inf
 `Passing information from child to parent component`
 The props system only allows information to be passed from parent to child.
 To initiate an API request, the `SearchBar component` passed up the user's search term to the `App component`.
+
+`2. Making Network (HTTP) Request`
