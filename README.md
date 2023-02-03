@@ -20,3 +20,6 @@ Event handlers can be passed as props along with a callback function on a compon
 2. <input type="text" value={this.state.term} onChange={(e) => this.setState({ term: e.target.value})}>
 
 The main difference between `controlled` and `uncontrolled elements` is that information in controlled elements is stored in the react's component (state) rather than the HTML DOM (value).
+
+`Passing information from child to parent component`
+To initiate an API request, the `SearchBar component` passed up the user's search term to the `App component`.
