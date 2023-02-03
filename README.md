@@ -18,3 +18,5 @@ Event handlers can be passed as props along with a callback function on a compon
 `how to set controlled element in input type`
 1. state = { term: "" }
 2. <input type="text" value={this.state.term} onChange={(e) => this.setState({ term: e.target.value})}>
+
+The main difference between `controlled` and `uncontrolled elements` is that information in controlled elements is stored in the react's component (state) rather than the HTML DOM (value).
