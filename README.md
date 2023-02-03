@@ -6,6 +6,7 @@ Makes an API request to the Unsplashed server and receives a collection of image
 3. How to show lists of records
 
 `1. How to get user inputs`
+
 `Event handlers` determines response to user inputs and actions like clicking, typing, keypress etc.
 
 - `onClick()` when user clicks on something, a callback function passed to it will be triggered.
@@ -17,8 +18,8 @@ Event handlers can be passed as props along with a callback function on a compon
 `Controlled and Uncontrolled elements`
 
 - `controlled form element` is the method of updating the text field's state using setState() instead of direct user input.
-  `how to set controlled element in input type`
 
+  `how to set controlled element in input type`
 1. state = { term: "" }
 2. <input type="text" value={this.state.term} onChange={(e) => this.setState({ term: e.target.value})}>
 
