@@ -35,3 +35,8 @@ To initiate an API request, the `SearchBar component` passed up the user's searc
 - async await
 
 `3. How to show lists of records`
+Rendering list. To show fetched data on webpage.
+- map() is used to build list of components
+- key props implementation.
+
+`4. Ref System`
