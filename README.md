@@ -22,4 +22,5 @@ Event handlers can be passed as props along with a callback function on a compon
 The main difference between `controlled` and `uncontrolled elements` is that information in controlled elements is stored in the react's component (state) rather than the HTML DOM (value).
 
 `Passing information from child to parent component`
+The props system only allows information to be passed from parent to child.
 To initiate an API request, the `SearchBar component` passed up the user's search term to the `App component`.
