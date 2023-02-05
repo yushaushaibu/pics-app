@@ -19,7 +19,7 @@ class App extends Component {
     return (
       <div className="ui container" style={{ marginTop: "10px" }}>
         <SearchBar onSubmitt={this.onSearchSubmit} />
-        <ImageList images={this.state.images}/>
+        <ImageList images={this.state.images} />
       </div>
     );
   }

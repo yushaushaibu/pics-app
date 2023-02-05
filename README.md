@@ -40,7 +40,7 @@ Rendering list. To show fetched data on webpage.
 - key props implementation.
 
 `4. Ref System`
-React Ref is the method of accessing DOM element directly in React instead of using the "document.querySelector('img');
+React Ref is the method of accessing single DOM element directly in React instead of using the "document.querySelector('img');
 
 ref is a Javascript object which contains the properties of the element (ex. img, h1 etc) `{ current: img }`. `current` is a property of ref object that references the DOM node.
 
